@@ -8,6 +8,8 @@ public class zad1_Czytelnik {
         Scanner sc = new Scanner(System.in);
         int choice;
 
+        int test;
+
         task.add();
 
         do {
