@@ -7,9 +7,7 @@ public class zad1_Czytelnik {
         Czytelnik task = new Czytelnik();
         Scanner sc = new Scanner(System.in);
         int choice;
-
-        int test;
-
+        
         task.add();
 
         do {
