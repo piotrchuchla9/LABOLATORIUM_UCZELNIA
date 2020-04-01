@@ -2,14 +2,13 @@ package LAB4;
 
 import java.util.Scanner;
 
-public class zad1_Czytelnik {
+public class zad1_Czytelnik{
+
     public static void main(String[] args) {
         Czytelnik task = new Czytelnik();
         Scanner sc = new Scanner(System.in);
         int choice;
-        
         task.add();
-
         do {
             System.out.println("\n----MENU----\n");
             System.out.println("1. Wyświetlanie informacji o czytelniku z podanym numerem karty bibliotecznej");
@@ -19,7 +18,6 @@ public class zad1_Czytelnik {
             System.out.println("5. Zmiana liczby wypożyczonych książek przy oddaniu pewnej ilości książek");
             System.out.println("\n0. Wyjście z programu");
             System.out.println("\nWybierz jedną z opcji: \n");
-
             choice = sc.nextInt();
             if (choice == 1) {
                 task.showByID();
@@ -33,10 +31,8 @@ public class zad1_Czytelnik {
                 task.giveBooksBack();
             }
         } while (choice != 0);
-
         if (choice == 0) {
             System.out.println("---------PROGRAM ZAKONCZONY------------");
         }
-
     }
 }

@@ -7,7 +7,6 @@ public class zad3_Wektor {
         Wektor task = new Wektor();
         Scanner sc = new Scanner(System.in);
         int choice;
-
         task.add();
         do {
             System.out.println("\n----MENU----\n");
@@ -19,7 +18,6 @@ public class zad3_Wektor {
             System.out.println("6. Iloczyn skalarny dwóch podanych wektorów");
             System.out.println("\n0. Wyjście z programu");
             System.out.println("\nWybierz jedną z opcji: \n");
-
             choice = sc.nextInt();
             if (choice == 1) {
                 task.allVectors();
@@ -34,9 +32,7 @@ public class zad3_Wektor {
             } else if (choice == 6) {
                 task.scalarMultiplication();
             }
-
         } while (choice != 0);
-
         if (choice == 0) {
             System.out.println("---------PROGRAM ZAKONCZONY------------");
         }

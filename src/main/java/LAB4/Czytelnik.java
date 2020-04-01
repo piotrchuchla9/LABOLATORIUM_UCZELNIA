@@ -87,7 +87,6 @@ public class Czytelnik {
         if (idExsists == false) {
             System.out.println("Nie ma takiego numeru karty czytelnika.");
         }
-
     }
 
     public static void giveBooksBack() {

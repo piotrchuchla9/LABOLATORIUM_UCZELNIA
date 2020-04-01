@@ -79,13 +79,10 @@ public class Wektor {
             double vecLen = sqrt((pow(coordX[i], 2)) + (pow(coordY[i], 2)));
             vectorsLength[i] = vecLen;
         }
-
         for (int i = 0; i < tabLength; i++) {
             vectorsSortedByLength[i] = vectorsLength[i];
         }
-        //comment
         Arrays.sort(vectorsSortedByLength);
-
         for (int i = 0; i < tabLength; i++) {
             for (int j = 0; j < tabLength; j++) {
                 if (vectorsSortedByLength[i] == vectorsLength[j]) {
@@ -113,10 +110,6 @@ public class Wektor {
             }
         }
         double scalar = ((coordXTemp1 * coordXTemp2) + (coordYTemp1 * coordYTemp2));
-
         System.out.println("Iloczyn skalarny tych wektorów to: " + scalar);
-
     }
 }
-
-

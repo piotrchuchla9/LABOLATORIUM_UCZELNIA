@@ -7,10 +7,8 @@ public class zad2_Samochod {
         Samochod task = new Samochod();
         Scanner sc = new Scanner(System.in);
         int choice;
-
         System.out.println("Podaj dane samochodów: \n");
         task.add();
-
         do {
             System.out.println("\n----MENU----\n");
             System.out.println("1. Wyświetl informacje o samochodzie o podanym numerze rejestracyjnym.");
@@ -20,9 +18,7 @@ public class zad2_Samochod {
             System.out.println("5. Posortuj pojazdy według pojemności silnika.");
             System.out.println("\n0. Wyjście z programu");
             System.out.println("\nWybierz jedną z opcji: \n");
-
             choice = sc.nextInt();
-
             if (choice == 1) {
                 task.showByCarID();
             } else if (choice == 2) {
@@ -34,12 +30,9 @@ public class zad2_Samochod {
             } else if (choice == 5) {
                 task.carsSortedByEngine();
             }
-
         } while (choice != 0);
-
         if (choice == 0) {
             System.out.println("---------PROGRAM ZAKONCZONY------------");
         }
-
     }
 }

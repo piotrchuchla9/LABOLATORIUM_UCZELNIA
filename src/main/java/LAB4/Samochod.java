@@ -90,13 +90,10 @@ public class Samochod {
 
     public static void carsSortedByEngine() {
         double sortedByEngine[] = new double[tabLength];
-        //copy
-        for (int i = 0; i < tabLength; i++) {
+        for (int i = 0; i < tabLength; i++) {                   //copy tab
             sortedByEngine[i] = engines[i];
         }
-
         Arrays.sort(sortedByEngine);
-
         for (int i = 0; i < tabLength; i++) {
             for (int j = 0; j < tabLength; j++) {
                 if (sortedByEngine[i] == engines[j]) {
