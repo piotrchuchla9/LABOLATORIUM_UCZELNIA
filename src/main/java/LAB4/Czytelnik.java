@@ -10,7 +10,7 @@ public class Czytelnik {
     public static int libraryID[] = new int[tabLength];
     public static int borrowedBooks[] = new int[tabLength];
 
-    public static void add() {
+    public static void addData() {
         System.out.println("Dodaj dane: ");
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < tabLength; i++) {
@@ -33,7 +33,7 @@ public class Czytelnik {
         for (int i = 0; i < tabLength; i++) {
             if (id == libraryID[i]) {
                 System.out.println("Nazwisko: " + surnames[i].toString() + "\tImię: " + names[i].toString() +
-                        "\tWypożyczone książki: " + borrowedBooks[i] + "\n");
+                        "\tWypożyczone książki: " + borrowedBooks[i]);
                 idExsists = true;
             }
         }
@@ -74,11 +74,11 @@ public class Czytelnik {
                 int nextOnes = sc.nextInt();
                 if ((nextOnes + borrowedBooks[i]) < 11) {
                     borrowedBooks[i] += nextOnes;
-                    System.out.println("lab4.Czytelnik: " + surnames[i].toString() + "\t" + names[i].toString() + "\tID " + libraryID[i] +
+                    System.out.println("Czytelnik: " + surnames[i].toString() + "\t" + names[i].toString() + "\tID " + libraryID[i] +
                             "\tobecnie wypożyczył: " + borrowedBooks[i]);
                     idExsists = true;
                 } else {
-                    System.out.println("lab4.Czytelnik: " + surnames[i].toString() + "\t" + names[i].toString() + "\tID " + libraryID[i] +
+                    System.out.println("Czytelnik: " + surnames[i].toString() + "\t" + names[i].toString() + "\tID " + libraryID[i] +
                             "\tnie może wypożyczyć aż tylu książek (maksymalnie: 10/obecnie: " + borrowedBooks[i] + ").");
                     idExsists = true;
                 }
@@ -101,8 +101,8 @@ public class Czytelnik {
                 books = sc.nextInt();
                 if ((borrowedBooks[i] - books) >= 0) {
                     borrowedBooks[i] = borrowedBooks[i] - books;
-                    System.out.println("lab4.Czytelnik: " + surnames[i].toString() + "\t" + names[i].toString() +
-                            "\tID: " + libraryID[i] + "\tobecnie wypożyczył: " + borrowedBooks[i]);
+                    System.out.println("Czytelnik: " + surnames[i].toString() + "\t" + names[i].toString() +
+                            "\tID: " + libraryID[i] + "\tobecnie wypożyczył: " + borrowedBooks[i] + " ksiazek.");
                     idExsists = true;
                 } else {
                     System.out.println("Nie można oddać więcej książek niż się wypożyczyło.");

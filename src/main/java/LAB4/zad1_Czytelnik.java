@@ -8,7 +8,7 @@ public class zad1_Czytelnik{
         Czytelnik task = new Czytelnik();
         Scanner sc = new Scanner(System.in);
         int choice;
-        task.add();
+        task.addData();
         do {
             System.out.println("\n----MENU----\n");
             System.out.println("1. Wyświetlanie informacji o czytelniku z podanym numerem karty bibliotecznej");
@@ -30,6 +30,7 @@ public class zad1_Czytelnik{
             } else if (choice == 5) {
                 task.giveBooksBack();
             }
+
         } while (choice != 0);
         if (choice == 0) {
             System.out.println("---------PROGRAM ZAKONCZONY------------");
