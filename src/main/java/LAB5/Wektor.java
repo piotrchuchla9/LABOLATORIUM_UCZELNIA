@@ -11,10 +11,13 @@ import static java.lang.Math.sqrt;
 
 public class Wektor {
 
-    public static int tabLength = 15;
+    public static double coordXPoint;
+    public static double coordYPoint;
+    public static int tabLength = 2;
     public static String[] vector = new String[tabLength];
     public static double[] coordX = new double[tabLength];
     public static double[] coordY = new double[tabLength];
+    public static String[] point = new String[tabLength];
 
     public static void add() {
         Scanner sc = new Scanner(System.in);
@@ -26,6 +29,9 @@ public class Wektor {
             coordX[i] = sc.nextDouble();
             System.out.println((i + 1) + "/" + tabLength + "\tPodaj współrzędną Y wektora: ");
             coordY[i] = sc.nextDouble();
+            coordXPoint = coordX[i];
+            coordYPoint = coordY[i];
+            point[i] = "[" + coordXPoint + "," + coordYPoint + "]";
         }
     }
 

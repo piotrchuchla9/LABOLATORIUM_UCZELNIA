@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Czytelnik {
 
-    public static int tabLength = 2;
+    public static int tabLength = 10;
     public static String surnames[] = new String[tabLength];
     public static String names[] = new String[tabLength];
     public static int libraryID[] = new int[tabLength];

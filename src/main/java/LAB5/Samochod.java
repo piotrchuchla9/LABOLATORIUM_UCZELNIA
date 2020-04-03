@@ -6,12 +6,14 @@ import java.util.Scanner;
 
 public class Samochod {
 
-    public static int tabLength = 5;
+    public static int tabLength = 2;
     public static String carName[] = new String[tabLength];
     public static double engines[] = new double[tabLength];
     public static int productionYears[] = new int[tabLength];
     public static String carIDs[] = new String[tabLength];
     public static String ownerSurenames[] = new String[tabLength];
+    public static double totalMass[] = new double[tabLength];
+    public static double ownMass[] = new double[tabLength];
 
     public static void add() {
         System.out.println("Dodaj dane: ");
@@ -27,6 +29,10 @@ public class Samochod {
             carIDs[i] = sc.next();
             System.out.println((i + 1) + "/" + tabLength + "\tPodaj nazwisko właściciela: ");
             ownerSurenames[i] = sc.next();
+            System.out.println((i + 1) + "/" + tabLength + "\tPodaj mase calkowita pojazdu (kg): ");
+            totalMass[i] = sc.nextDouble();
+            System.out.println((i + 1) + "/" + tabLength + "\tPodaj mase wlasna pojazdu (kg): ");
+            ownMass[i] = sc.nextDouble();
         }
     }
 
