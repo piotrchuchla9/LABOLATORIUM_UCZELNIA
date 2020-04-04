@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Samochod {
 
-    public static int tabLength = 2;
+    public static int tabLength = 5;
     public static String carName[] = new String[tabLength];
     public static double engines[] = new double[tabLength];
     public static int productionYears[] = new int[tabLength];

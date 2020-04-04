@@ -13,7 +13,7 @@ public class Wektor {
 
     public static double coordXPoint;
     public static double coordYPoint;
-    public static int tabLength = 2;
+    public static int tabLength = 15;
     public static String[] vector = new String[tabLength];
     public static double[] coordX = new double[tabLength];
     public static double[] coordY = new double[tabLength];
