@@ -48,7 +48,7 @@ public class Wektor {
             double vecLen = sqrt((pow(coordX[i], 2)) + (pow(coordY[i], 2)));
             BigDecimal bd = new BigDecimal(vecLen).setScale(2, RoundingMode.HALF_UP);
             double newVecLen = bd.doubleValue();
-            System.out.println("lab4.Wektor " + vector[i] + " ma długość: " + newVecLen);
+            System.out.println("Wektor " + vector[i] + " ma długość: " + newVecLen);
         }
     }
 
@@ -56,7 +56,7 @@ public class Wektor {
         boolean parallelExsists = false;
         for (int i = 0; i < tabLength; i++) {
             if (coordY[i] == 0) {
-                System.out.println("lab4.Wektor " + vector[i] + " " + coordX[i] + "," + coordY[i] + " jest równoległy do OX.");
+                System.out.println("Wektor " + vector[i] + " " + coordX[i] + "," + coordY[i] + " jest równoległy do OX.");
                 parallelExsists = true;
             }
         }
@@ -69,7 +69,7 @@ public class Wektor {
         boolean parallelExsists = false;
         for (int i = 0; i < tabLength; i++) {
             if (coordX[i] == 0) {
-                System.out.println("lab4.Wektor " + vector[i] + " " + coordX[i] + "," + coordY[i] + " jest równoległy do OY.");
+                System.out.println("Wektor " + vector[i] + " " + coordX[i] + "," + coordY[i] + " jest równoległy do OY.");
                 parallelExsists = true;
             }
         }
@@ -92,7 +92,7 @@ public class Wektor {
         for (int i = 0; i < tabLength; i++) {
             for (int j = 0; j < tabLength; j++) {
                 if (vectorsSortedByLength[i] == vectorsLength[j]) {
-                    System.out.println("lab4.Wektor: " + vector[j] + "\t Koordynaty: " + coordX[j] + "," + coordY[j] +
+                    System.out.println("Wektor: " + vector[j] + "\t Koordynaty: " + coordX[j] + "," + coordY[j] +
                             "\tDługość: " + vectorsLength[j]);
                 }
             }

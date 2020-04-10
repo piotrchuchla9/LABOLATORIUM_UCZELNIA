@@ -2,7 +2,7 @@ package LAB5;
 
 import java.util.Scanner;
 
-public class zad1_Czytelnik{
+public class zad1_Czytelnik {
 
     public static void main(String[] args) {
         Czytelnik task = new Czytelnik();

@@ -34,7 +34,7 @@ public class zad2_Samochod {
                 task.carsSortedByEngine();
             } else if (choice == 6) {
                 taskCiezarowy.moreInfo();
-            } else if(choice == 7){
+            } else if (choice == 7) {
                 taskCiezarowy.carMaxCapacity();
             }
         } while (choice != 0);
