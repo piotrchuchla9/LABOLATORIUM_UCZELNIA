@@ -1,4 +1,4 @@
-package LAB5;
+package LAB5.Wektor;
 
 import java.util.Objects;
 import java.util.Scanner;

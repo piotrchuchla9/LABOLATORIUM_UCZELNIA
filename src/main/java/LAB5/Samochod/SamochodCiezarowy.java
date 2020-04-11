@@ -1,4 +1,4 @@
-package LAB5;
+package LAB5.Samochod;
 
 import java.util.Objects;
 import java.util.Scanner;

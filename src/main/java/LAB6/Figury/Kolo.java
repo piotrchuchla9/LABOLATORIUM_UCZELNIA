@@ -1,4 +1,4 @@
-package LAB6;
+package LAB6.Figury;
 
 public class Kolo extends Figura {
     double promien;

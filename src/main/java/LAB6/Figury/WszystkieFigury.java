@@ -1,4 +1,4 @@
-package LAB6;
+package LAB6.Figury;
 
 public class WszystkieFigury {
     public static void main(String[] args) {

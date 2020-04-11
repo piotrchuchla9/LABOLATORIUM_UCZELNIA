@@ -1,4 +1,4 @@
-package LAB4;
+package LAB4.Czytelnik;
 
 import java.util.Scanner;
 

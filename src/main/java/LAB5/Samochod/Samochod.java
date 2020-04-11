@@ -1,4 +1,4 @@
-package LAB5;
+package LAB5.Samochod;
 
 import java.util.Arrays;
 import java.util.Objects;

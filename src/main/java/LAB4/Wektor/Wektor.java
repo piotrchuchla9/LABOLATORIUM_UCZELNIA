@@ -1,4 +1,4 @@
-package LAB4;
+package LAB4.Wektor;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

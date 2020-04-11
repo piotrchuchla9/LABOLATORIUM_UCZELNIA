@@ -1,4 +1,4 @@
-package LAB5;
+package LAB5.Wektor;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
