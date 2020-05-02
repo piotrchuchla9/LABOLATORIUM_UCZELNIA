@@ -1,5 +1,7 @@
 package LAB8.matematyka;
 
+import static java.lang.Math.sqrt;
+
 public class LiczbaZespolona {
 
     double re;
@@ -21,6 +23,16 @@ public class LiczbaZespolona {
         }
         else if(im>0){
             System.out.print(re + "+" + im + symbol);
+        }
+    }
+
+    public class Modul{
+
+        double modul;
+
+        Modul(LiczbaZespolona ai)
+        {
+            this.modul = sqrt(ai.im * ai.im + ai.re * ai.re);
         }
     }
 

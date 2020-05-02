@@ -65,15 +65,19 @@ public class Wykonaj {
         System.out.println("---------------------------------");
         System.out.println();
 
-        LiczbaZespolona ai = new LiczbaZespolona(4,2);
+        LiczbaZespolona ai = new LiczbaZespolona(4,4);
         LiczbaZespolona bi = new LiczbaZespolona(-6,13);
         LiczbaZespolona ci = new LiczbaZespolona(13,0);
-        LiczbaZespolona di = new LiczbaZespolona(0,-8);
+        LiczbaZespolona di = new LiczbaZespolona(-3,-8);
 
         ai.wyswietlZespolone();
+        System.out.println();
         bi.wyswietlZespolone();
+        System.out.println();
         ci.wyswietlZespolone();
+        System.out.println();
         di.wyswietlZespolone();
+        System.out.println();
 
         System.out.println();
         System.out.println("---------------------------------");
@@ -95,9 +99,18 @@ public class Wykonaj {
         OperacjeNaLiczbachZespolonych.mnozenie2(di,12);
         System.out.print("\n");
 
-        System.out.println("ai / b1:");
+        System.out.println("di / b1:");
         OperacjeNaLiczbachZespolonych.dzielenie(ai,bi);
         System.out.println("\n");
+
+        System.out.println();
+        System.out.println("---------------------------------");
+        System.out.println();
+
+        LiczbaZespolona.Modul modul = ai.new Modul(ai);
+        System.out.print("Moduł z ai: ");
+        ai.wyswietlZespolone();
+        System.out.println(" = " + modul.modul);
 
     }
 }
