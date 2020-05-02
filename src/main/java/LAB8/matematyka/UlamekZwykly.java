@@ -2,19 +2,33 @@ package LAB8.matematyka;
 
 public class UlamekZwykly {
 
-    float licznik;
-    float mianownik;
+    Integer licznik;
+    Integer mianownik;
+    static int ileUlamkow = 0;
+    static String kreska = "/" ;
 
-    static int ileUlamkow;
-    static final String kreska = "/";
-
-    public UlamekZwykly(float licznik,float mianownik){
+    UlamekZwykly(int licznik, int mianownik)
+    {
         this.licznik = licznik;
         this.mianownik = mianownik;
+        ileUlamkow++;
     }
 
-    public static void wyswietl(){
-
+    public void wyswietl()
+    {
+        System.out.print(licznik + kreska + mianownik);
     }
 
+
+
+    public class UlamekDziesietny
+    {
+        float dziesietny;
+
+        UlamekDziesietny(UlamekZwykly a)
+        {
+            this.dziesietny = (float)a.licznik / (float)a.mianownik;
+        }
+
+    }
 }
