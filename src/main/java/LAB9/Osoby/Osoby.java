@@ -12,8 +12,4 @@ public class Osoby {
         this.wzrost=wzrost;
         this.waga=waga;
     }
-
-    public void dane(){
-        System.out.println(imie + nazwisko + " wiek: " + wiek + " wzrost: " + wzrost + " waga: " + waga);
-    }
 }

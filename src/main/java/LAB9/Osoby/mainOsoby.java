@@ -153,6 +153,7 @@ public class mainOsoby {
                 System.out.println("1. Sortuj wedlug wieku");
                 System.out.println("2. Sortuj wedlug wzrostu");
                 System.out.println("3. Sortuj wedlug wagi");
+                System.out.println("4. Koniec");
                 wybor = sc.nextInt();
 
                 if(wybor == 1){
