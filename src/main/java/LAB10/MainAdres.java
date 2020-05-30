@@ -51,7 +51,7 @@ public class MainAdres extends ZlyKodPocztowyException {
                     throw new ZlyKodPocztowyException();
                 }
             } catch (ZlyKodPocztowyException ex) {
-                System.out.println("Error 1 - Zly kod pocztowy!\t\t\t\t\tDla mieszkania o adresie: " + adresy[i].ulica + " " + adresy[i].numer_budynku + "/" +
+                System.out.println("Error 1 - Zly kod pocztowy!\t\t\tDla mieszkania o adresie: " + adresy[i].ulica + " " + adresy[i].numer_budynku + "/" +
                         adresy[i].numer_mieszkania + "  " + adresy[i].kod + " " + adresy[i].miejscowosc +
                         " - wprowadzono niepoprawny kod pocztowy: " + adresy[i].kod);
             }
@@ -62,7 +62,7 @@ public class MainAdres extends ZlyKodPocztowyException {
             try {
                 int numer = Integer.parseInt(adresy[i].numer_mieszkania);
             } catch (NumberFormatException e) {
-                System.out.println("Error 2 - Niepoprawny numer mieszkania!\t\tDla mieszkania o adresie: " + adresy[i].ulica + " " + adresy[i].numer_budynku + "/" +
+                System.out.println("Error 2 - Zly numer mieszkania!\t\tDla mieszkania o adresie: " + adresy[i].ulica + " " + adresy[i].numer_budynku + "/" +
                         adresy[i].numer_mieszkania + "  " + adresy[i].kod + " " + adresy[i].miejscowosc +
                         " - wprowadzono niepoprawny numer mieszkania: " + adresy[i].numer_mieszkania);
             }
