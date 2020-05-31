@@ -1,4 +1,4 @@
-package LAB10;
+package LAB10.Adres;
 
 public class MainAdres extends ZlyKodPocztowyException {
     public static void main(String[] args) {
@@ -10,6 +10,12 @@ public class MainAdres extends ZlyKodPocztowyException {
         adresy[1] = new Adres("Podkarpacka", "44", "X", "38-400", "Krosno");
         adresy[2] = new Adres("Rejtana", "123C", "122", "36X176", "Rzeszow");
         adresy[3] = new Adres("Pomorska", "1", "X", "31X574", "Gdynia");
+
+        for(int i = 0;i<adresy.length;i++){
+            System.out.println(adresy[i].ulica + " " + adresy[i].numer_budynku + "/" +
+                    adresy[i].numer_mieszkania + "  " + adresy[i].kod + " " + adresy[i].miejscowosc);
+        }
+        System.out.println("\n");
 
         //sprawdza czy kod pocztowy jest poprawny
         boolean poprawnosc;
