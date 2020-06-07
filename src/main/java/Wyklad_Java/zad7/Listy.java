@@ -18,6 +18,8 @@ public class Listy <T extends Comparable>{
         return lista;
     }
 
+    public void usunOstatniElement() {lista.remove(lista.size()-1);}
+
     public void sortuj(){
         Collections.sort(lista);
     }

@@ -19,5 +19,9 @@ public class main {
 
         System.out.print("Losowy element listy: ");
         System.out.println(lista.losuj());
+
+        System.out.print("Usun ostatni element: ");
+        lista.usunOstatniElement();
+        System.out.println(lista.getLista());
     }
 }
